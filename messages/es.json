@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "team": "Team",
+    "philosophy": "Philosophy",
+    "performance": "Performance",
+    "filings": "Filings",
+    "join": "How to Join",
+    "faq": "FAQ"
+  },
+  "cta": {
+    "buy": "Buy $NIBBLES",
+    "prospectus": "Read the Prospectus",
+    "filings": "View Filings",
+    "return": "Return to The Fund",
+    "subscribe": "Subscribe"
+  },
+  "fund": {
+    "name": "The Nibbles Fund",
+    "tagline": "Outperforming the S&P since 2023. Run by a hamster. Audited by nobody.",
+    "established": "Est. MMXXIV · Shoebox HQ · Fort Lee, NJ",
+    "fineprint": "The Fund is currently accepting retail subscriptions. Mr. Nibbles is accepting none."
+  },
+  "footer": {
+    "disclaimer": "The Nibbles Fund is a memecoin. It is not a registered investment vehicle. Mr. Nibbles is a hamster. Past performance is commentary, not a promise.",
+    "copyright": "© 2026 The Nibbles Fund · All Seeds Reserved",
+    "hidden": "if you have read this far the fund thanks you. you will not be mentioned."
+  },
+  "language": {
+    "switch": "Language",
+    "current": "Current language"
+  }
+}
