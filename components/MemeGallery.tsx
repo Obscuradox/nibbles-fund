@@ -61,7 +61,7 @@ export function MemeGallery() {
           </div>
         </FadeInOnScroll>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
           {MEMES.map((m, i) => (
             <FadeInOnScroll key={m.file} delay={0.03 * (i % 6)}>
               <button
@@ -70,19 +70,19 @@ export function MemeGallery() {
                 aria-label={`Enlarge: ${m.caption}`}
               >
                 <div
-                  className="relative w-full"
+                  className="relative w-full bg-whiteboard-cream"
                   style={{ aspectRatio: m.aspect.replace("/", " / ") }}
                 >
                   <Image
                     src={`/images/memes/${m.file}`}
                     alt={m.caption}
                     fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                 </div>
-                <div className="flex items-center justify-between gap-3 border-t border-brass/30 bg-cream-paper px-4 py-3">
-                  <p className="font-display text-lg leading-tight text-ink">
+                <div className="flex items-center justify-between gap-3 border-t border-brass/30 bg-cream-paper px-5 py-4">
+                  <p className="font-display text-xl leading-tight text-ink md:text-2xl">
                     {m.caption}
                   </p>
                   <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-brass">

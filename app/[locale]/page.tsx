@@ -26,7 +26,6 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <MemeGallery />
         <LiveHoldings />
         <Team />
         <BoardOfAdvisors />
@@ -38,6 +37,7 @@ export default function Home() {
         <Timeline />
         <InvestorGate />
         <FAQ />
+        <MemeGallery />
       </main>
       <Footer />
       <AudioToggle />
