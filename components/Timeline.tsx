@@ -19,7 +19,7 @@ const MILESTONES: Milestone[] = [
     where: "PetSmart · Fort Lee, NJ",
     title: "The Purchase",
     body: "Mr. Nibbles acquired for $14.99. No orientation was provided. He did not require one.",
-    thumb: "/renders/backroom.png",
+    thumb: "/images/timeline/origin-2021.png",
     metric: { label: "Cost Basis", value: "$14.99" },
   },
   {
@@ -27,7 +27,7 @@ const MILESTONES: Milestone[] = [
     where: "The Ledger",
     title: "First Trade Executed",
     body: "A profit of $847 was booked on a single SOL position. Craig, still day-trading at the time, did not notice.",
-    thumb: "/renders/backroom.png",
+    thumb: "/images/timeline/first-trade-2022.png",
     metric: { label: "First Profit", value: "+$847" },
   },
   {
@@ -35,15 +35,15 @@ const MILESTONES: Milestone[] = [
     where: "Six Figures",
     title: "Portfolio Crosses $100K",
     body: "Mr. Nibbles orders a new whiteboard. Deborah approves the requisition without comment.",
-    thumb: "/renders/vault.png",
-    metric: { label: "AUM", value: "$100K" },
+    thumb: "/images/timeline/hundred-k-2023.png",
+    metric: { label: "Stash", value: "$100K" },
   },
   {
     date: "Jan 2024",
     where: "The Fund",
     title: "The Nibbles Fund Established",
     body: "Deborah joins as Head of IR, Compliance, and Everything Else. Craig is retained in an advisory non-capacity.",
-    thumb: "/renders/tradingfloor.png",
+    thumb: "/images/timeline/fund-founded-2024.png",
     metric: { label: "Founded", value: "Jan 2024" },
   },
   {
@@ -51,7 +51,7 @@ const MILESTONES: Milestone[] = [
     where: "Outperformance",
     title: "Fourth Consecutive Quarter Beating S&P",
     body: "Performance attributed to Seeds II, III, and V. Ratification of methodology pending internal review.",
-    thumb: "/renders/rooftop.png",
+    thumb: "/images/timeline/outperformance-2024.png",
     metric: { label: "YTD", value: "+412%" },
   },
   {
@@ -59,7 +59,7 @@ const MILESTONES: Milestone[] = [
     where: "Retail Open",
     title: "Public Subscription Accepted",
     body: "$NIBBLES launches on pump.fun. Mr. Nibbles remains at his desk. Deborah remains unreachable by phone.",
-    thumb: "/renders/cigar.png",
+    thumb: "/images/timeline/launch-2026.png",
     metric: { label: "Launch", value: "$NIBBLES" },
   },
 ];

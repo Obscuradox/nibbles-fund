@@ -93,7 +93,7 @@ export function Hero() {
 
           <FadeInOnScroll delay={0.14}>
             <p className="mt-6 max-w-xl font-sans text-base leading-relaxed text-ink/80 sm:text-lg md:text-xl">
-              A hedge fund. Run by a hamster. Audited by nobody.
+              A hamster who only trades green candles. Three years. Zero losses. Nobody knows how he does it.
             </p>
           </FadeInOnScroll>
 
@@ -187,15 +187,15 @@ export function Hero() {
             </div>
           )}
 
-          {/* Floating Bloomberg chips */}
+          {/* Floating chips — plain-English numbers, not jargon */}
           <div className="absolute right-2 top-0 z-40 md:right-4 md:top-2">
-            <FloatingChip label="YTD" value="+847.3%" variant="gold" delay={0.8} />
+            <FloatingChip label="Gains" value="+847.3%" variant="gold" delay={0.8} />
           </div>
           <div className="absolute bottom-24 left-2 z-40 hidden md:block">
-            <FloatingChip label="AUM" value="$4.2M" variant="navy" delay={1.0} />
+            <FloatingChip label="Stash" value="$4.2M" variant="navy" delay={1.0} />
           </div>
           <div className="absolute right-10 top-64 z-40 hidden lg:block">
-            <FloatingChip label="Sharpe" value="4.2" variant="green" delay={1.2} />
+            <FloatingChip label="Losses" value="0" variant="green" delay={1.2} />
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ const ITEMS = [
     title: "Advisory Business",
     body: [
       "The Adviser provides discretionary investment management services. The Adviser is a hamster. The Adviser is discretionary in temperament as well as in legal character.",
-      "Assets under management as of the most recent valuation date: $4.2M (approximate, unaudited, aspirational).",
+      "Amount in the stash, last time Deborah counted: $4.2M (approximate, unaudited, aspirational).",
       "The Adviser tailors advisory services to the individual needs of clients who have not been accepted as clients.",
     ],
   },

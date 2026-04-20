@@ -26,13 +26,12 @@ export function Performance() {
       <div className="relative prospectus-container py-20 md:py-28">
         <FadeInOnScroll>
           <div className="mb-12 max-w-3xl">
-            <p className="kicker mb-4">Performance</p>
+            <p className="kicker mb-4">The Numbers</p>
             <h2 className="font-display text-4xl leading-tight md:text-5xl">
-              Compound Return. Compound Discipline.
+              Line goes up. Always.
             </h2>
             <p className="mt-4 font-sans text-lg leading-relaxed text-slate-70">
-              Nibbles Fund vs. S&amp;P 500, cumulative return. Past performance is indicative of future
-              performance. Mr. Nibbles does not believe in disclaimers.
+              Nibbles vs. everything else. Three years of candles, all green. No red ones. Not even by accident.
             </p>
           </div>
         </FadeInOnScroll>
@@ -69,22 +68,22 @@ export function Performance() {
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
           <FadeInOnScroll delay={0.05}>
             <StatTile
-              label="3-Year Return"
+              label="Total Gains"
               value={<><CountUp end={1124} separator="," />%</>}
-              note="Cumulative, net of fees (there are no fees)."
+              note="Three years. No fees. No excuses."
             />
           </FadeInOnScroll>
           <FadeInOnScroll delay={0.1}>
             <StatTile
-              label="Sharpe Ratio"
-              value={<CountUp end={4.2} decimals={1} />}
-              note="Seeds-adjusted."
+              label="Win Rate"
+              value={<><CountUp end={100} />%</>}
+              note="Every trade. Every time."
             />
           </FadeInOnScroll>
           <FadeInOnScroll delay={0.15}>
             <StatTile
-              label="Max Drawdown"
-              value={<><CountUp end={0} decimals={2} />%</>}
+              label="Red Candles"
+              value={<CountUp end={0} />}
               note="Mr. Nibbles does not ship red candles."
             />
           </FadeInOnScroll>
@@ -96,8 +95,8 @@ export function Performance() {
             <PaperCard variant="letterhead" className="px-6 py-8 md:px-10">
               <div className="flex flex-wrap items-center justify-between gap-4 border-b border-brass/30 pb-4">
                 <div>
-                  <p className="kicker">Cost-Basis Calculator</p>
-                  <p className="mt-1 font-display text-2xl">The Regret Engine</p>
+                  <p className="kicker">What-if Calculator</p>
+                  <p className="mt-1 font-display text-2xl">The Regret Machine</p>
                 </div>
                 <button
                   onClick={() => {

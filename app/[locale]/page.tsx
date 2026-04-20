@@ -2,6 +2,7 @@ import { TickerBar } from "@/components/TickerBar";
 import { BloombergChyron } from "@/components/ui/BloombergChyron";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { MemeGallery } from "@/components/MemeGallery";
 import { LiveHoldings } from "@/components/LiveHoldings";
 import { Team } from "@/components/Team";
 import { BoardOfAdvisors } from "@/components/BoardOfAdvisors";
@@ -25,6 +26,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <MemeGallery />
         <LiveHoldings />
         <Team />
         <BoardOfAdvisors />
