@@ -12,7 +12,6 @@ import { EarningsCall } from "@/components/EarningsCall";
 import { FilingsRoom } from "@/components/FilingsRoom";
 import { TearSheet } from "@/components/TearSheet";
 import { Timeline } from "@/components/Timeline";
-import { InvestorGate } from "@/components/InvestorGate";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { AudioToggle } from "@/components/ui/AudioToggle";
@@ -35,7 +34,6 @@ export default function Home() {
         <FilingsRoom />
         <TearSheet />
         <Timeline />
-        <InvestorGate />
         <FAQ />
         <MemeGallery />
       </main>
