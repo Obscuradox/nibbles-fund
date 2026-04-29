@@ -9,7 +9,6 @@ import { Team } from "@/components/Team";
 import { BoardOfAdvisors } from "@/components/BoardOfAdvisors";
 import { Philosophy } from "@/components/Philosophy";
 import { Performance } from "@/components/Performance";
-import { EarningsCall } from "@/components/EarningsCall";
 import { FilingsRoom } from "@/components/FilingsRoom";
 import { TearSheet } from "@/components/TearSheet";
 import { Timeline } from "@/components/Timeline";
@@ -32,7 +31,6 @@ export default function Home() {
         <BoardOfAdvisors />
         <Philosophy />
         <Performance />
-        <EarningsCall />
         <FilingsRoom />
         <TearSheet />
         <Timeline />
