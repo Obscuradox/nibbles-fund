@@ -17,7 +17,7 @@ export function Nav() {
 
   return (
     <header
-      className="sticky top-8 z-30 border-b border-brass/30 bg-cream-paper/95 backdrop-blur-sm"
+      className="sticky top-[60px] z-20 border-b border-brass/30 bg-cream-paper/95 backdrop-blur-sm"
       style={{ backdropFilter: "saturate(1.1)" }}
     >
       <div className="prospectus-container flex h-16 items-center justify-between">
@@ -50,7 +50,7 @@ export function Nav() {
           </a>
           <button
             onClick={() => setOpen(true)}
-            className="md:hidden"
+            className="-mr-2 inline-flex h-10 w-10 items-center justify-center md:hidden"
             aria-label="Open navigation"
           >
             <Menu className="h-6 w-6 text-ink" />
@@ -66,7 +66,11 @@ export function Nav() {
         >
           <div className="flex items-center justify-between border-b border-brass/30 px-6 py-5">
             <span className="font-display text-xl">The Nibbles Fund</span>
-            <button onClick={() => setOpen(false)} aria-label="Close navigation">
+            <button
+              onClick={() => setOpen(false)}
+              className="-mr-2 inline-flex h-10 w-10 items-center justify-center"
+              aria-label="Close navigation"
+            >
               <X className="h-6 w-6 text-ink" />
             </button>
           </div>

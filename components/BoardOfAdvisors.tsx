@@ -185,7 +185,7 @@ export function BoardOfAdvisors() {
             >
               <button
                 onClick={() => setOpen(null)}
-                className="absolute right-4 top-4 text-ink/70 hover:text-ink"
+                className="absolute right-2 top-2 inline-flex h-10 w-10 items-center justify-center text-ink/70 hover:text-ink"
                 aria-label="Close biography"
               >
                 <X className="h-5 w-5" />

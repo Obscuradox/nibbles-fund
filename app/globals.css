@@ -20,6 +20,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 124px; /* TickerBar 32 + BloombergChyron 28 + Nav 64 */
     -webkit-font-smoothing: antialiased;
   }
 

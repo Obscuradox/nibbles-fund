@@ -99,7 +99,7 @@ export function FAQ() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={0.1}>
-            <div className="sticky top-32 flex flex-col items-center">
+            <div className="flex flex-col items-center lg:sticky lg:top-[140px]">
               <div className="relative h-72 w-full max-w-[280px]">
                 <Image
                   src="/images/deborah-pointing.png"

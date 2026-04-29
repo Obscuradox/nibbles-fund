@@ -99,11 +99,14 @@ export function TickerBar() {
   if (halted) {
     return (
       <div
-        className="sticky top-0 z-40 flex h-8 items-center justify-center bg-alert-red text-cream-paper font-mono text-xs uppercase tracking-[0.25em]"
+        className="sticky top-0 z-40 flex h-8 items-center justify-center overflow-hidden bg-alert-red px-3 font-mono text-[10px] uppercase tracking-[0.18em] text-cream-paper sm:text-xs sm:tracking-[0.25em]"
         role="banner"
         data-ticker
       >
-        ◼ Trading Halt · Material Development · Fund Resuming Shortly
+        <span className="truncate">
+          <span className="sm:hidden">◼ Trading Halt · Material Dev.</span>
+          <span className="hidden sm:inline">◼ Trading Halt · Material Development · Fund Resuming Shortly</span>
+        </span>
       </div>
     );
   }

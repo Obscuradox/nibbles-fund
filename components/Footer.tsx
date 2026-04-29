@@ -93,11 +93,11 @@ export function Footer() {
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.22em] text-nibbles-gold-soft">
               Est. MMXXIV · Shoebox HQ · Fort Lee, NJ
             </p>
-            <div className="mt-4 flex flex-wrap items-center gap-3 font-mono text-[10px] uppercase tracking-[0.16em] text-cream-paper/60">
-              <span className="border border-nibbles-gold/40 bg-nibbles-gold/10 px-2 py-1 text-nibbles-gold-soft">
+            <div className="mt-4 flex flex-wrap items-center gap-3 font-mono text-[10px] uppercase tracking-[0.12em] text-cream-paper/60">
+              <span className="break-all border border-nibbles-gold/40 bg-nibbles-gold/10 px-2 py-1 text-nibbles-gold-soft">
                 Member NIBBLES-SIPC (Privately Operated)
               </span>
-              <span className="border border-cream-paper/20 px-2 py-1">
+              <span className="break-all border border-cream-paper/20 px-2 py-1">
                 SWIFT/BIC: NIBBUS33XXX · ABA: 000-00-0000
               </span>
             </div>

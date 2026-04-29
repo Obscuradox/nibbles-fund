@@ -210,6 +210,9 @@ export function FilingsRoom() {
           </div>
         </FadeInOnScroll>
 
+        <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.18em] text-brass md:hidden">
+          Swipe →
+        </p>
         <div className="overflow-x-auto border border-brass/30 bg-cream-paper shadow-card">
           <table className="w-full min-w-[720px] font-mono text-sm">
             <thead className="bg-whiteboard-cream">
@@ -292,7 +295,7 @@ export function FilingsRoom() {
                   setOpen(null);
                   closeCraig();
                 }}
-                className="absolute right-4 top-4 text-ink/60 hover:text-ink"
+                className="absolute right-2 top-2 inline-flex h-10 w-10 items-center justify-center text-ink/60 hover:text-ink"
                 aria-label="Close document"
               >
                 <X className="h-5 w-5" />

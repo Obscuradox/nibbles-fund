@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, ArrowDown, FileText } from "lucide-react";
+import { ArrowUpRight, ArrowDown, FileText, PlayCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { TOKEN } from "@/lib/config";
 import { CopyButton } from "./ui/CopyButton";
@@ -113,6 +113,10 @@ export function Hero() {
               <a href={TOKEN.pumpFunUrl} target="_blank" rel="noreferrer" className="btn-primary">
                 Buy ${TOKEN.ticker}
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+              <a href="#film" className="btn-ghost">
+                Watch the Film
+                <PlayCircle className="h-4 w-4" aria-hidden="true" />
               </a>
               <a href="#philosophy" className="btn-ghost">
                 Read the Prospectus
