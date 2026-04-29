@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { ArrowUpRight, ArrowDown, FileText, PlayCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { TOKEN } from "@/lib/config";
@@ -9,64 +9,20 @@ import { FadeInOnScroll } from "./motion/FadeInOnScroll";
 import { CharacterCutout } from "./ui/CharacterCutout";
 import { Whiteboard } from "./ui/Whiteboard";
 import { FloatingChip } from "./ui/FloatingChip";
-import { LaserBeam } from "./ui/LaserBeam";
 import { SpeechBubble } from "./ui/SpeechBubble";
 
 const VOICE_LINES = ["Observing.", "Noted.", "Acceptable.", "Hmm.", "Carry on."];
 
-// Pen tip origin — measured against the character PNG at 360×360 rendered size.
-// Character is anchored bottom-left of the canvas. Pen tip in character-local coords.
-const PAW_LOCAL = { x: 322, y: 196 };
 const CHARACTER_SIZE = 360;
 
 export function Hero() {
   const canvasRef = useRef<HTMLDivElement>(null);
-  const peakRef = useRef<HTMLDivElement>(null);
   const [bubble, setBubble] = useState<string | null>(null);
-  const [pawAbs, setPawAbs] = useState<{ x: number; y: number } | null>(null);
-  const [laserTo, setLaserTo] = useState<{ x: number; y: number } | null>(null);
-
-  // Measure paw + chart-peak anchor positions relative to the canvas.
-  // Recompute on resize, on fonts loaded, and on scroll (layout shifts can move things).
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const peak = peakRef.current;
-    if (!canvas) return;
-
-    const update = () => {
-      const cRect = canvas.getBoundingClientRect();
-      // Paw: character sits at bottom-left of canvas.
-      const paw = {
-        x: PAW_LOCAL.x,
-        y: cRect.height - CHARACTER_SIZE + PAW_LOCAL.y,
-      };
-      setPawAbs(paw);
-
-      if (peak) {
-        const pRect = peak.getBoundingClientRect();
-        setLaserTo({
-          x: pRect.left - cRect.left + pRect.width / 2,
-          y: pRect.top - cRect.top + pRect.height / 2,
-        });
-      }
-    };
-
-    update();
-    window.addEventListener("resize", update);
-    // Re-measure after images/fonts load
-    const t = window.setTimeout(update, 300);
-    const t2 = window.setTimeout(update, 1200);
-    return () => {
-      window.removeEventListener("resize", update);
-      clearTimeout(t);
-      clearTimeout(t2);
-    };
-  }, []);
 
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-brass/30 laser-cursor"
+      className="relative overflow-hidden border-b border-brass/30"
     >
       {/* Ambient radial fade background */}
       <div
@@ -152,16 +108,7 @@ export function Hero() {
           {/* Whiteboard with SVG chart. On mobile we use a smaller board; md+ gets full size. */}
           <div className="absolute right-2 top-10 z-10 hidden md:block md:right-8 md:top-12">
             <Whiteboard width={380} height={260}>
-              <div className="relative h-full w-full">
-                <HeroChart />
-                {/* Invisible anchor at breakout arrow head — laser target */}
-                <div
-                  ref={peakRef}
-                  aria-hidden="true"
-                  className="absolute h-1 w-1"
-                  style={{ left: "86%", top: "12%" }}
-                />
-              </div>
+              <HeroChart />
             </Whiteboard>
           </div>
           <div className="absolute right-2 top-6 z-10 md:hidden">
@@ -183,13 +130,6 @@ export function Hero() {
             />
             <SpeechBubble text={bubble} className="bottom-full left-24 mb-2" />
           </div>
-
-          {/* Laser beam — hidden on mobile where the layered composition compresses */}
-          {pawAbs && laserTo && (
-            <div className="pointer-events-none absolute inset-0 z-30 hidden md:block">
-              <LaserBeam from={pawAbs} to={laserTo} animated />
-            </div>
-          )}
 
           {/* Floating chips — plain-English numbers, not jargon */}
           <div className="absolute right-2 top-0 z-40 md:right-4 md:top-2">
