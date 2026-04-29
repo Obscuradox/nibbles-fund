@@ -13,18 +13,18 @@ type Meme = {
 };
 
 const MEMES: Meme[] = [
-  { file: "casino.png", caption: "Black. Always black.", aspect: "16/9" },
-  { file: "yacht.png", caption: "He bought the yacht in cash.", aspect: "16/9" },
-  { file: "lambo.png", caption: "He also bought the Lambo in cash.", aspect: "16/9" },
-  { file: "gym.png", caption: "Leg day is also gains day.", aspect: "3/2" },
-  { file: "congress.png", caption: "He did not invoke the Fifth.", aspect: "16/9" },
-  { file: "sauna.png", caption: "Cardio.", aspect: "3/2" },
-  { file: "court.png", caption: "Under oath. On his Bloomberg.", aspect: "16/9" },
-  { file: "ramen.png", caption: "Still eats seeds. Still rich.", aspect: "3/2" },
-  { file: "redbull.png", caption: "Another Tuesday.", aspect: "16/9" },
-  { file: "jet.png", caption: "He does not know the pilot.", aspect: "16/9" },
-  { file: "tattoo.png", caption: "His first red candle. And his last.", aspect: "3/2" },
-  { file: "ipo.png", caption: "He rang the bell once. It was enough.", aspect: "16/9" },
+  { file: "chant.jpg", caption: "Welcome to Stratton Burrowmont.", aspect: "16/9" },
+  { file: "fugayzi.jpg", caption: "Every other coin is fugayzi.", aspect: "16/9" },
+  { file: "casino.jpg", caption: "Black. Always black.", aspect: "16/9" },
+  { file: "yacht.jpg", caption: "He bought the yacht in cash.", aspect: "16/9" },
+  { file: "lambo.jpg", caption: "He drove home. He was fine.", aspect: "16/9" },
+  { file: "crawl.jpg", caption: "When the chart turns red.", aspect: "16/9" },
+  { file: "pen.jpg", caption: "Sell me this seed.", aspect: "16/9" },
+  { file: "fbi.jpg", caption: "He filed the prospectus.", aspect: "16/9" },
+  { file: "limo-money.jpg", caption: "F-you seeds.", aspect: "16/9" },
+  { file: "helipad.jpg", caption: "Insurance covered it.", aspect: "16/9" },
+  { file: "tattoo.jpg", caption: "His first red candle. And his last.", aspect: "3/2" },
+  { file: "wink.jpg", caption: "Sometimes you take the lemmons.", aspect: "3/2" },
 ];
 
 export function MemeGallery() {
